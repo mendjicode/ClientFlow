@@ -1,0 +1,27 @@
+{
+  "name": "clientflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.86.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@playwright/test": "^1.56.1",
+    "browser-sync": "^3.0.4",
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.25.12",
+    "gulp": "^5.0.1",
+    "prettier": "^3.9.10",
+    "sass": "^1.94.0"
+  }
+}
