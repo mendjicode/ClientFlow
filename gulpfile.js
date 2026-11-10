@@ -39,7 +39,13 @@ export async function dev() {
   await build();
   browserSync
     .create()
-    .init({ server: "dist", port: 3000, open: false, notify: false });
+    .init({
+      server: "dist",
+      port: 3000,
+      open: false,
+      notify: false,
+      ghostMode: false,
+    });
   gulp.watch("src/**/*", build);
 }
 export default build;
